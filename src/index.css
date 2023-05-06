@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Raleway', sans-serif;
+  }
+  *{
+    cursor: none;
+
+  }
+}
+
+.cursor {
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid  white;
+  transition: all 300ms ease-out;
+  position: fixed;
+  pointer-events: none;
+  left: 0;
+  top: 0;
+  transform: translate(calc(-50% + 15px), -50%);
+  }
+  .cursor2 {
+  width: 9px;
+  height: 9px;
+  border-radius: 100%;
+  background-color:  white;
+  opacity: 1;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width .3s, height .3s, opacity .3s;
+  }
+  
+  .cursorinnerhover {
+  width: 50px;
+  height: 50px;
+  opacity: .5;
+  }
